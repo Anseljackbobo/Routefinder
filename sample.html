@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Waypoints in Directions</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="map"></div>
+        <div id="sidebar">
+            <div>
+                <p>The route has been calculated and the total distance is 164.174 km.
+                    <br /> By clicking following botton to show routes
+                </p>
+            </div>
+            <div>
+                <br />
+                <button type="button" id="Firstpath">First Part of Path</button>
+                <br />
+                <button type="button" id="Secondpath">Second Part of Path</button>
+                <br />
+                <button type="button" id="Thirdpath">Final Part of Path</button>
+            </div>
+            <div id="directions-panel"></div>
+        </div>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBc7_XJXo_asnlXkQhwuQGGnyC6rDXYZVQ&callback=initMap&v=weekly"
+        async></script>
+</body>
+
+</html>
