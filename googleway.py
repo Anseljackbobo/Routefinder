@@ -4,7 +4,7 @@ from itertools import tee
 
 def find_distance_matrix():
     df = pd.read_csv('googleresults.csv')
-    API_key = 'AIzaSyBc7_XJXo_asnlXkQhwuQGGnyC6rDXYZVQ'   #enter the key you got from Google. I removed mine here
+    API_key = 'your_API_Key'   #enter the key you got from Google. I removed mine here
 
     gmaps = googlemaps.Client(key=API_key)
 

@@ -13,7 +13,7 @@ def visual_full_route():
         lat_lng = str(lat) + ',' + str(lng)
         data.append(lat_lng)
 
-    gmaps = googlemaps.Client(key='AIzaSyBc7_XJXo_asnlXkQhwuQGGnyC6rDXYZVQ')
+    gmaps = googlemaps.Client(key='your_API_Key')
     waypoints1 = []
     waypoints2 = []
     waypoints3 = []
